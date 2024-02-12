@@ -10,7 +10,7 @@ import json
 
 class HBNBCommand(cmd.Cmd):
 
-        """Class for the command interpreter."""
+        """Class for the command"""
 
         prompt = "(hbnb) "
 
@@ -46,7 +46,8 @@ class HBNBCommand(cmd.Cmd):
                 if match_attr_and_value:
                     attr_and_value = (match_attr_and_value.group(
                         1) or "") + " " + (match_attr_and_value.group(2) or "")
-            command = method + " " + classname + " " + uid + " " + attr_and_value
+            command = (method + " " + classname + " " + uid + " " +
+                       attr_and_value)
             self.onecmd(command)
             return command
 

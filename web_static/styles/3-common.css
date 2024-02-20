@@ -5,3 +5,9 @@ body {
 	font-size: 14px;
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+  .logo {
+    height: 70px;
+    width: 150px;
+    float: left;
+    background: url('../images/logo.png') no-repeat center;
+  }
